@@ -23,3 +23,8 @@ body.cv-page .inner > h2 { font-size:1.75rem !important; }
 body.cv-page .inner > .major { font-size:1.1rem !important; line-height:1.65 !important; }
 @media(max-width:736px){.navbar{justify-content:center}.banner .content{padding-top:3rem !important}body.cv-page .index .content h3{font-size:1.1rem !important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Match the Home introduction while retaining the original CV layout. */
+body.cv-page .cv-intro .inner { padding-top: 4.5rem; padding-bottom: 3rem; }
+body.cv-page .cv-intro h1 { font-size: clamp(2.2rem, 4vw, 3.4rem) !important; font-weight: 300; letter-spacing: -.035em; }
+body.cv-page .cv-intro .major { max-width: 54rem; margin-left: auto; margin-right: auto; }
