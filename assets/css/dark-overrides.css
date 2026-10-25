@@ -23,3 +23,17 @@ footer { border-top:1px solid var(--line); }
 #form-status { min-height:1.5em; }
 @media (max-width:736px) { .navbar { justify-content:center; } .banner .content { padding-top:3rem !important; } .banner .actions, .banner .content p:has(.button) { line-height:3.7; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+/* Compact contact section, keeping original template styling */
+.contact-strip .inner { padding-top: 3rem; padding-bottom: 2.5rem; }
+.contact-strip p { margin-bottom: 0; }
+
+/* CV only: smaller, readable typography without changing the template layout */
+body.cv-page .index .content > header > p,
+body.cv-page .index .content > header > p.major { color: #c4ceda !important; font-size: 1rem !important; line-height: 1.5 !important; }
+body.cv-page .index .content > p,
+body.cv-page .index .content li { color: #d5dce5 !important; font-size: .95rem !important; line-height: 1.65 !important; }
+body.cv-page .index .content h3 { font-size: 1.2rem !important; line-height: 1.35 !important; }
+body.cv-page .index > section > header h3 { font-size: 1rem !important; line-height: 1.5 !important; color: #c4ceda !important; }
+body.cv-page .inner > h2 { font-size: 1.75rem !important; }
+body.cv-page .inner > .major { font-size: 1.1rem !important; line-height: 1.65 !important; }
+@media (max-width:736px) { body.cv-page .index .content h3 { font-size: 1.1rem !important; } body.cv-page .index .content > p { font-size: .95rem !important; } }
