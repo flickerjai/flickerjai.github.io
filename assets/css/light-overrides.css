@@ -1,0 +1,25 @@
+/* Light theme for both pages, preserving the original HTML5 UP Story layout. */
+:root { color-scheme: light; --bg:#ffffff; --text:#30343b; --muted:#555e69; --line:#dfe3e8; --accent:#405e83; }
+html { scroll-behavior:smooth; }
+body, #wrapper, .wrapper.style1, .spotlight, .banner { background:#fff !important; color:var(--text) !important; }
+h1,h2,h3,h4,h5,h6,strong,b,label { color:#252c35 !important; }
+p,li { color:var(--muted); }
+a { color:var(--accent); }
+a:hover { color:#243b56 !important; }
+.navbar { display:flex; gap:1.6rem; align-items:center; justify-content:flex-end; padding:1rem clamp(1.25rem,5vw,5rem); background:#fff; border-bottom:1px solid var(--line); }
+.navbar a { color:#30343b; text-decoration:none; border:0; font-weight:600; }
+.navbar a[aria-current="page"] { color:var(--accent); }
+.items.style1 > section { border-color:var(--line) !important; }
+.icon.style2:before { color:var(--accent) !important; }
+.contact-strip .inner { padding-top:3rem; padding-bottom:2.5rem; }
+.contact-strip p { margin-bottom:0; }
+footer { border-top:1px solid var(--line); }
+/* Compact CV typography without changing its columns or effects. */
+body.cv-page .index .content > header > p, body.cv-page .index .content > header > p.major { color:#59616d !important; font-size:1rem !important; line-height:1.5 !important; }
+body.cv-page .index .content > p, body.cv-page .index .content li { color:#4b5562 !important; font-size:.95rem !important; line-height:1.65 !important; }
+body.cv-page .index .content h3 { font-size:1.2rem !important; line-height:1.35 !important; }
+body.cv-page .index > section > header h3 { font-size:1rem !important; line-height:1.5 !important; color:#626b76 !important; }
+body.cv-page .inner > h2 { font-size:1.75rem !important; }
+body.cv-page .inner > .major { font-size:1.1rem !important; line-height:1.65 !important; }
+@media(max-width:736px){.navbar{justify-content:center}.banner .content{padding-top:3rem !important}body.cv-page .index .content h3{font-size:1.1rem !important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
