@@ -1,0 +1,25 @@
+/* Load after assets/css/main.css; retains HTML5 UP Story layout and responsiveness. */
+:root { color-scheme: dark; --bg:#11151b; --surface:#1a2029; --surface-alt:#151b23; --text:#f2f4f7; --muted:#b7c2cf; --line:#384352; --accent:#a9c7eb; }
+html { scroll-behavior:smooth; }
+body, #wrapper, .wrapper.style1, .spotlight, .banner { background:var(--bg) !important; color:var(--text) !important; }
+.wrapper.style1:nth-of-type(even), .spotlight.style1 { background:var(--surface-alt) !important; }
+h1,h2,h3,h4,h5,h6, strong, b, label { color:var(--text) !important; }
+p, li { color:var(--muted); }
+a { color:var(--accent); border-bottom-color:rgba(169,199,235,.4); }
+a:hover { color:#fff !important; }
+.navbar { display:flex; gap:1.6rem; align-items:center; justify-content:flex-end; padding:1rem clamp(1.25rem,5vw,5rem); background:var(--surface); border-bottom:1px solid var(--line); }
+.navbar a { color:var(--text); text-decoration:none; border:0; font-weight:600; }
+.navbar a[aria-current="page"] { color:var(--accent); }
+.eyebrow { text-transform:uppercase; letter-spacing:.15em; font-size:.75rem; font-weight:700; color:var(--accent); }
+.major { color:var(--text); }
+.items.style1 > section { border-color:var(--line) !important; }
+.icon.style2:before { box-shadow:inset 0 0 0 1px var(--line) !important; color:var(--accent) !important; }
+.button, button, input[type="submit"], input[type="button"] { color:var(--text) !important; box-shadow:inset 0 0 0 1px var(--line) !important; }
+.button.primary, input[type="submit"] { background:var(--accent) !important; color:#101821 !important; box-shadow:none !important; }
+input[type="text"],input[type="email"],textarea,select { background:var(--surface) !important; border-color:var(--line) !important; color:var(--text) !important; }
+input:focus, textarea:focus, select:focus { border-color:var(--accent) !important; box-shadow:0 0 0 1px var(--accent) !important; }
+::placeholder { color:var(--muted); }
+footer { border-top:1px solid var(--line); }
+#form-status { min-height:1.5em; }
+@media (max-width:736px) { .navbar { justify-content:center; } .banner .content { padding-top:3rem !important; } .banner .actions, .banner .content p:has(.button) { line-height:3.7; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
